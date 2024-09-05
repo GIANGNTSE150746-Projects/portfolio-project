@@ -1,0 +1,67 @@
+@import url(config.css);
+@import url(fonts.css);
+
+html,
+body {
+  scroll-behavior: smooth;
+  overflow: hidden auto;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+* {
+  /* font-family: "Courier New", Courier, monospace; */
+  font-family: "SUSE", "Lato", "Open Sans";
+  box-sizing: border-box;
+}
+
+a,
+i,
+em,
+b,
+strong,
+span,
+p,
+li {
+  color: var(--primary-color);
+}
+
+/* Nav */
+.nav-container {
+  width: 100%;
+}
+.nav-container > .nav-item {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  text-align: center;
+  transition: 0.3s;
+  padding: 0.5rem;
+  height: 100%;
+  width: 100%;
+}
+.nav-container > .nav-item:hover {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+}
+
+.banner {
+  position: relative;
+  width: 100%;
+}
+.banner:before {
+  content: "";
+  display: block;
+  position: absolute;
+  opacity: 0.3;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  background-image: url(/assets/images/home/Banner.webp);
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: cover;
+}
